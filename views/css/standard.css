@@ -1,0 +1,25 @@
+body { 
+    background-color: black;
+}
+.slider{
+    width: 100%;
+    padding-top: 5%;
+}
+
+img{
+    width: 100%;
+}
+.container-fluid{
+    width: 100%;
+}
+.wrapper{width: 100%;
+	margin: auto;
+	overflow: hidden;
+    padding: 0;
+    background-color: black;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
