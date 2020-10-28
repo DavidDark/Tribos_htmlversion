@@ -1,43 +1,23 @@
-body { 
-    background-color: black;
-}
-.slider{
-    width: 100%;
-    padding-top: 5%;
-}
 
-img{
-    width: 100%;
-}
-.container-fluid{
-    width: 100%;
-}
-.wrapper{width: 100%;
-	margin: auto;
-	overflow: hidden;
-    padding: 0;
-    background-color: black;
-}
-
-.logo{
-    width: 100px;
-    height: 100px;
-}
-
+body {font-family: 'Nunito', sans-serif;margin: 0;padding: 0;}
+.d-table {width: 100%;height: 100%;display: table;}
+.d-tablecell {display: table-cell;vertical-align: middle;}
+.custom-btn1 {background-color: #ff3547;color: #fff;border: 1px solid #ff3547;display: inline-block;padding: 12px 30px;text-transform: uppercase;border-radius: 30px;text-decoration: none;}
+.custom-btn1:hover {background-color: transparent;text-decoration: none;color: #fff;}
 /*
-Slider style
+Hero slider style
 ==========================*/
 .hero-slider {position: relative;}
 .single-hs-item {height: 700px;background-size: cover;background-position: center center;position: relative;}
-.single-hs-item:before {content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0%;background-color: #000;opacity: .6;}
+.single-hs-item:before {content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: #000;opacity: .6;}
 .item-bg1 {
-background-image: url(../assets/profile_trib.png);
+background-image: url(../assets/bg0.png);
 }
 .item-bg2 {
 background-image: url(../assets/profile_trib.png);
 }
 .item-bg3 {
-background-image: url(../assets/profile_trib.png);
+background-image: url(../assets/bg0.png);
 }
 .item-bg4 {
 background-image: url(../assets/profile_trib.png);
