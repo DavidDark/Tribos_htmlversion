@@ -1,0 +1,38 @@
+.container-fluid{
+    background-image: url("../assets/FONDO_(NOSOTROS).png");
+    background-size: 100%;
+    background-color: #cccccc;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+}
+
+.cfoot{
+    height: 100%;
+}
+
+#upper-menu{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 3%;
+    color: white;
+}
+#side-navbar{
+    font-size: 10px;
+    font-family:arial;
+    color: white;
+    text-align: right;
+}
+p{
+    font-size: 10px;
+    font-family:arial;
+    
+}
+h5{
+    font-size: 10px;
+    font-family:arial;
+}
+

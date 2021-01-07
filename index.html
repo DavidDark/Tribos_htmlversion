@@ -7,98 +7,72 @@
         
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="views/css/standard.css">
-    <!--Carousel imports -->
-    <link rel="stylesheet" href="views/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="views/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <!-- Modal imports -->
-    <link href="views/css/jquery.alert.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="css/nosotros.css">
 </head>
+
 <body>
     <div class="container-fluid">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="views/assets/logo.png"></img></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="catalogo.html">CATÁLOGO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proceso.html">PROCESO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html">NOTICIAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">TIENDA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="container" id="Main-Container">
+            <div class="row" id="Main-Row">
 
-        <div class="container" style="width: 100%;">
-			<div class="row"><!--Main container-->
-				<!-- Hero Slider -->
-                <div id="home" class="hero-slider owl-carousel owl-theme" style="width: 100%;">
-                    <div class="single-hs-item item-bg1" style="background-image: url(views/assets/profile_trib.png)">
-                        <div class="d-table">
-                            <div class="d-tablecell">
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-3" id="Left-Col">
+                    <div class="container" id="Left-Main-Container">
+                        <div class="row" id="Logo-Row">
+                            <div class="col-12" id="Logo">
+                                <img src="assets/LOGO_TRIBOS.png" style="width: 65%; padding-left: 5%;"></img>
+                            </div><!--Logo Div End-->
+                        </div><!--Logo Row End-->
 
-                    <div class="single-hs-item item-bg2">
-                        <div class="d-table">
-                            <div class="d-tablecell">
-                            </div>
-                        </div>
-                    </div>
+                        <div class="row" id="Side-Menu-Row">
+                            <div class="col-12" id="Side-Menu">
+                                <br>
+                                <a href="">HISTORIA |</a><br>
+                                <a href="">MISION |</a><br>
+                                <a href="">VISION |</a><br>
+                                <a href="">ESCENCIA |</a><br>
+                                <a href="">CRONOGRAMA |</a><br>
+                                <a href="">PREMIOS |</a>
+                            </div><!--Side Menu Div End-->
+                        </div><!--Side Menu Row End-->
+                    </div><!--Left Main Container Div End-->
+                </div><!--Left Col div End-->
 
-                    <div class="single-hs-item item-bg3" style="background-image: url(views/assets/profile_trib.png)">
-                        <div class="d-table">
-                            <div class="d-tablecell">
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-9" id="Right-Col">
+                    <div class="container" id="Right-Main-Container">
+                        <div class="row" id="Menu-Row">
+                            <div class="col-10" id="Menu">
+                                <!--<p id="nav">NOSOTROS | CÁTALOGO | PROCESO | TIENDA | NOTICIAS | CONTACTO</p>-->
+                                <p><a href="">NOSOTROS</a> | 
+                                <a href="">CÁTALOGO</a> | 
+                                <a href="">PROCESO</a> | 
+                                <a href="">TIENDA</a> | 
+                                <a href="">NOTICIAS</a> | 
+                                <a href="">CONTACTO</a></p>
+                            </div><!--Menu Div End -->
+                        </div><!--Menu Row Div End-->
 
-                    <div class="single-hs-item item-bg4">
-                        <div class="d-table">
-                          <div class="d-tablecell">
-                          </div>
-                      </div>
-                  </div>
-                </div><!-- End Hero Slider -->
+                        <div class="row" id="Content-Row">
+                            <div class="col-7" id="Info">
+                                <br><b><h5 style="padding-left: 7%;">TRIBOS</h5></b>
+                                <p style="padding-left: 7%;">Es armonía, equilibrio y calidad, es naturaleza, vid, es símbolo del pacto de unión de tres familias en donde coinciden el amor por la 
+                                tierra y su cultivo</p>
+                            </div><!--Info Div End -->
 
-                <div class="row">
-                    <br>
-                    <hr>
-                </div>
-            </div><!--End Row -->
-        </div><!--End container -->
-    </div><!-- End container fluid -->
+                            <div class="col-5" id="Bottle">
+                                <img src="assets/BOTELLA_PNG_(NOSOTROS).png" style="width: 58%;"></img>
+                            </div><!--Bottle Div End-->
 
-    <script src="views/js/jquery-3.4.1.js"></script>
-    <script src="views/js/bootstrap.js"></script>
-    <script src="views/js/owl.carousel.min.js"></script>
-    <script src="views/js/sliderb.js"></script> 
-    <script src="views/js/jquery.alert.min.js"></script>
-    <script src="views/js/term.js"></script>
-    
+                        </div><!--Content Row Div End-->
+                    </div><!--Right Main Container Div End -->
+                </div><!--Right-Col Div End-->
+            </div><!--Main Row Div End-->
+        </div><!--Main Container Div End-->
+    </div><!--End container Fluid-->
+
+    <footer>
+        <p id="label">Progreso </p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
