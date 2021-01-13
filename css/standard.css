@@ -1,38 +1,40 @@
 .container-fluid{
     background-image: url("../assets/FONDO_(NOSOTROS).png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-color: #cccccc;
+    padding-top: 5%;
+    height: 90%;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 70px;
+    height: 10%;
+    width: 100%;
+    text-align: center; 
+}
+#label{
+    color: black;
 }
 
-.cfoot{
-    height: 100%;
-}
-
-#upper-menu{
+#Menu{
     text-align: center;
-    font-size: 10px;
-    padding-top: 3%;
-    color: white;
+    font-size: 160%;
+    padding-top: 5%;
 }
-#side-navbar{
-    font-size: 10px;
-    font-family:arial;
-    color: white;
+#Side-Menu{
     text-align: right;
 }
-p{
-    font-size: 10px;
-    font-family:arial;
-    
-}
-h5{
-    font-size: 10px;
-    font-family:arial;
+#Info{
+    padding-top: 3%;
 }
 
+p,a{
+    font-size: 60%;
+    font-family:arial;
+    color: white;
+}
+h5{
+    color: white;
+    font-size: 75%;
+    font-weight: 20;
+    font-family: arial-black;
+}
