@@ -27,7 +27,12 @@ footer {
     padding-top: 3%;
 }
 
-p,a{
+a{
+    font-size: 65%;
+    font-family: Avantgarde;
+    color: white;
+}
+#text{
     font-size: 65%;
     font-family: Avantgarde;
     color: white;
@@ -37,4 +42,9 @@ h5{
     font-size: 80%;
     font-weight: 200;
     font-family: "Avant Garde";
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
 }

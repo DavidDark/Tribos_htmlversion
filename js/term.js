@@ -3,7 +3,7 @@ window.onload = function() {
   
   var isAnAdult = ReadCookie('isAnAdult');
    if (isAnAdult == null) {
-    $.confirm('<img class="logo" src="views/assets/logo.png"></img> <hr> Este sitio en internet está dirigido al uso personal de individuos mayores de edad <br> en países y territorio en que el consumo de bebidas alcohólicas es permitido <br> por las leyes correspondientes'
+    $.confirm('<img class="logo" src="assets/LOGO_TRIBOS_black.png"></img> <hr> Este sitio en internet está dirigido al uso personal de individuos mayores de edad <br> en países y territorio en que el consumo de bebidas alcohólicas es permitido <br> por las leyes correspondientes'
     ,{
       title:'Terminos y Condiciones.',
       em:'¿Eres mayor de 18 años?',
