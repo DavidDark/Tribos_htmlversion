@@ -2,12 +2,12 @@
     background-image: url("../assets/FONDO_NOSOTROS.png");
     background-size: 100% 100%;
     background-color: #cccccc;
-    padding-top: 5%;
+    padding-top: 2%;
     height: auto;
 }
 #Content-Row{
     height: 100%;
-    padding-top: 5%;
+    padding-left: 5%;
 }
 
 footer {
