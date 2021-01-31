@@ -10,43 +10,38 @@
     <link rel="stylesheet" href="css/standard.css">
 
     <!-- Modal imports -->
-    <!--<link href="css/jquery.alert.css" rel="stylesheet" />-->
+    <link href="css/jquery.alert.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <div class="container-fluid" style="background-image: url('assets/FONDO_NOSOTROS.png');">
+    <div class="container-fluid" id="container-fluid" style="background-image: url('assets/FONDO_NOSOTROS.png');">
         <div class="container" id="Main-Container">
-            <div class="row" id="Main-Row">
+            <div class="row" id="LogoMenu-Row" >
+                <div class="col-2" id="Logo">
+                    <a href="index.html"><img id="menu_logo" src="assets/LOGO_TRIBOS_anim.gif"></img></a>
+                </div><!--Logo-Div End-->
+                <div class="col-2" id="Middle">
+                </div><!--Logo-Div End-->
+                <div class="col-8" id="topnav">
+                    <a id="t0" href="nosotros.html">NOSOTROS</a><a class="noun">|</a>
+                    <a id="t1" href="catalogo.html">CÁTALOGO</a><a class="noun">|</a>
+                    <a id="t2" href="viñedos.html">PROCESO</a><a class="noun">|</a>
+                    <a id="t3" href="tienda.html">TIENDA</a><a class="noun">|</a>
+                    <a id="t4" href="noticias.html">NOTICIAS</a><a class="noun">|</a>
+                    <a id="t5" href="contacto.html">CONTACTO</a>
+                    <a id="t6" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">...</i>
+                    </a>
+                </div><!--Menu-div end-->
+            </div><!--Menu Row Div End-->
+            <div class="row" id="Content-Row">
 
-                <div class="col-3" id="Left-Col">
-                    <div class="container" id="Left-Main-Container">
-                        <div class="row" id="Logo-Row">
-                            <div class="col-12" id="Logo">
-                                <a class="link" href="index.html"><img id="menu_logo" src="assets/LOGO_TRIBOS_anim.gif"></img></a>
-                            </div><!--Logo Div End-->
-                        </div><!--Logo Row End-->
-                    </div><!--Left Main Container Div End-->
-                </div><!--Left Col div End-->
-
-                <div class="col-9" id="Right-Col">
-                    <div class="container" id="Right-Main-Container">
-                        <div class="row" id="Menu-Row">
-                            <div class="col-10" id="Menu">
-                                <!--<p id="nav">NOSOTROS | CÁTALOGO | PROCESO | TIENDA | NOTICIAS | CONTACTO</p>-->
-                                <p id="nav"><a href="nosotros.html">NOSOTROS</a> | 
-                                <a href="catalogo.html">CÁTALOGO</a> | 
-                                <a href="viñedos.html">PROCESO</a> | 
-                                <a href="tienda.html">TIENDA</a> | 
-                                <a href="noticias.html">NOTICIAS</a> | 
-                                <a href="contacto.html">CONTACTO</a></p>
-                            </div><!--Menu Div End -->
-                        </div><!--Menu Row Div End-->
-                    </div><!--Right Main Container Div End -->
-                </div><!--Right-Col Div End-->
-            </div><!--Main Row Div End-->
+            </div><!--Content Row End-->
+            <div class="clearfix"></div>
         </div><!--Main Container Div End-->
     </div><!--End container Fluid-->
+    
 
     <footer>
         <div class="row" id="Foot-Row">
@@ -77,9 +72,19 @@
         </div><!--foot row end-->
     </footer>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "col-8") {
+        x.className += " responsive";
+      } else {
+        x.className = "col-8";
+      }
+    }
+    </script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.alert.js"></script>
-    <!--<script src="js/term.js"></script>-->
+    <script src="js/term.js"></script>
 </body>
 </html>

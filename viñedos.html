@@ -12,107 +12,240 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
 </head>
 
 <body>
-    <div class="container-fluid" style="background-image: url('assets/FONDO_MISION.png');">
+    <div class="container-fluid" id="container-fluid" style="background-image: url('assets/FONDO_BODEGAS.jpg');">
         <div class="container" id="Main-Container">
-            <div class="row" id="Main-Row">
+            <div class="row" id="LogoMenu-Row" >
+                <div class="col-2" id="Logo">
+                    <a href="index.html"><img id="menu_logo" src="assets/LOGO_TRIBOS_anim.gif"></img></a>
+                </div><!--Logo-Div End-->
+                <div class="col-2" id="Middle">
+                </div><!--Logo-Div End-->
+                <div class="col-8" id="topnav">
+                    <a href="nosotros.html">NOSOTROS</a><a class="noun">|</a>
+                    <a href="catalogo.html">CÁTALOGO</a><a class="noun">|</a>
+                    <a href="viñedos.html" class="active">PROCESO</a><a class="noun">|</a>
+                    <a href="tienda.html">TIENDA</a><a class="noun">|</a>
+                    <a href="noticias.html">NOTICIAS</a><a class="noun">|</a>
+                    <a href="contacto.html">CONTACTO</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">...</i>
+                    </a>
+                </div><!--Menu-div end-->
+            </div><!--Menu Row Div End-->
+            <div class="row" id="Content-Row" style="height: auto;">
+                <div class="col-2" id="Side-Menu">
+                    <br>
+                    <ul>
+                        <li><a class="shift" onclick="shiftcontent(event, 'Vinedos')">VIÑEDOS</a><a class="noun">|</a></li>
+                        <li><a class="shift" onclick="shiftcontent(event, 'Procesos')">PROCESOS</a><a class="noun">|</a></li>
+                        <li><a class="shift" onclick="shiftcontent(event, 'Bodega')">BODEGA</a><a class="noun">|</a></li>
+                        <li><a class="shift" onclick="shiftcontent(event, 'Enologo')">ENÓLOGO</a><a class="noun">|</a></li>
+                    </ul>
+                </div><!--Side-Menu Div End-->
+                <div class="col-9" id="Content-Shifter" >
+                  <div class="wrap" id="Vinedos">
+                    <div class="row" id="Shifter-Row">
+                      <div class="col-5" id="Info">
+                          <br>
+                          <pre style="padding-top: 1%;">Nuestra experiencia en el cultivo de la vid viene de muchos años atrás. 
+Cada viñedo fue planeado meticulosamente para maximizar el potencial de la región y de cada uno de nuestros varietales.
+ 
+•   Superficie: 20 hectáreas de viñedo de las siguientes variedades: Cabernet Sauvignon, Cabernet Franc, Malbec, Syrah, Petit Verdot. 
 
-                <div class="col-3" id="Left-Col">
-                    <div class="container" id="Left-Main-Container">
-                        <div class="row" id="Logo-Row">
-                            <div class="col-12" id="Logo">
-                                <a href="index.html"><img src="assets/LOGO_TRIBOS_anim.gif" style="width: 65%; padding-left: 5%;"></img></a>
-                            </div><!--Logo Div End-->
-                        </div><!--Logo Row End-->
+•   Viticultura de precisión: Contamos con lotes pequeños e independientes; Estos nos ayuda a controlar aún más las necesidades de cada parcela y variedad.
+ 
+•   Clima excepcional: Nos encontramos a 1,700 MSNM, lo que nos permite tener climas extremos y amplitudes térmicas de hasta 20 grados durante la maduración. Así logramos una maduración homogénea y envidiable. 
 
-                        <div class="row" id="Side-Menu-Row">
-                            <div class="col-12" id="Side-Menu" style="font-size: 20px;">
-                                <br>
-                                <p><a href="viñedos.html"><b><mark>VIÑEDOS</b></mark></a> |<br>
-                                <a href="procesos.html">PROCESOS</a> |<br>
-                                <a href="bodega.html">BODEGA</a> |<br>
-                                <a href="enologo.html">ENÓLOGO</a> |</p>
-                            </div><!--Side Menu Div End-->
-                        </div><!--Side Menu Row End-->
-                    </div><!--Left Main Container Div End-->
-                </div><!--Left Col div End-->
+•   Producciones controladas: No buscamos la cantidad sino la calidad. Producimos no más de 7 toneladas por hectárea. 
+</pre>
+                      </div><!--Info Div End -->
 
-                <div class="col-9" id="Right-Col">
-                    <div class="container" id="Right-Main-Container">
-                        <div class="row" id="Menu-Row">
-                            <div class="col-10" id="Menu">
-                                <!--<p id="nav">NOSOTROS | CÁTALOGO | PROCESO | TIENDA | NOTICIAS | CONTACTO</p>-->
-                                <p><a href="nosotros.html">NOSOTROS</a> | 
-                                <a href="catalogo.html">CÁTALOGO</a> | 
-                                <a href="viñedos.html"><mark><b>PROCESO</b></mark></a> | 
-                                <a href="tienda.html">TIENDA</a> | 
-                                <a href="noticias.html">NOTICIAS</a> | 
-                                <a href="contacto.html">CONTACTO</a></p>
-                            </div><!--Menu Div End -->
-                        </div><!--Menu Row Div End-->
-
-                        <div class="row" id="Content-Row">
-                            <div class="col-5" id="Info">
-                                <br>
-                                <pre style="padding-left: 7%; height: 80%;">Nuestro nombre proviene del latín
-“Tribuum”, por tratarse de 3 familias que al
-igual que las tribus que habitaron nuestra
-región, nos integramos para cumplir un
-objetivo: hacer los mejores vinos de México.
-TRIBOS comienza como un sueño, de poder
-redescubrir en las tierras en la que
-trabajamos anteriormente con distintos
-cultivos.
-Nuestro nombre proviene del latín
-“Tribuum”, por tratarse de 3 familias que al
-igual que las tribus que habitaron nuestra
-región, nos integramos para cumplir un
-objetivo: hacer los mejores vinos de México.
-TRIBOS comienza como un sueño, de poder
-redescubrir en las tierras en la que
-trabajamos anteriormente con distintos
-cultivos</pre>
-                            </div><!--Info Div End -->
-
-                            <div class="col-7" id="slider" style="padding-top: 5%;">
-                                <!-- Hero Slider -->
-                                <div id="home" class="hero-slider owl-carousel owl-theme" style="height: 80%;">
-                                    <div class="single-hs-item item-bg1" style="background-image: url(assets/FONDO_CRONOGRAMA.png)">
-                                        <div class="d-table">
-                                            <div class="d-tablecell">
-                                            </div>
-                                        </div>
+                      <div class="col-7" id="slider">
+                        <br>
+                        <!-- Hero Slider -->
+                        <div id="home" class="hero-slider owl-carousel owl-theme" style="height: 80%;">
+                            <div class="single-hs-item item-bg1" style="background-image: url(assets/VINEDOS_CARRUSEL1.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
                                     </div>
+                                </div>
+                            </div>
 
-                                    <div class="single-hs-item item-bg2" style="background-image: url(assets/FONDO_CRONOGRAMA.png)">
-                                        <div class="d-table">
-                                            <div class="d-tablecell">
-                                            </div>
-                                        </div>
+                            <div class="single-hs-item item-bg2" style="background-image: url(assets/VINEDOS_CARRUSEL2.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
                                     </div>
+                                </div>
+                            </div>
 
-                                    <div class="single-hs-item item-bg3" style="background-image: url(assets/FONDO_HISTORIA.png)">
-                                        <div class="d-table">
-                                            <div class="d-tablecell">
-                                            </div>
-                                        </div>
+                            <div class="single-hs-item item-bg3" style="background-image: url(assets/VINEDOS_CARRUSEL3.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
                                     </div>
+                                </div>
+                            </div>
 
-                                    <div class="single-hs-item item-bg4" style="background-image: url(assets/FONDO_HISTORIA.png)">
-                                        <div class="d-table">
-                                          <div class="d-tablecell">
-                                          </div>
-                                        </div>
+                            <div class="single-hs-item item-bg4" style="background-image: url(assets/VINEDOS_CARRUSEL4.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
                                     </div>
-                                </div><!-- End Hero Slider -->
-                            </div><!--Bottle Div End-->
+                                </div>
+                            </div>
 
-                        </div><!--Content Row Div End-->
-                    </div><!--Right Main Container Div End -->
-                </div><!--Right-Col Div End-->
-            </div><!--Main Row Div End-->
+                            <div class="single-hs-item item-bg5" style="background-image: url(assets/VINEDOS_CARRUSEL5.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg6" style="background-image: url(assets/VINEDOS_CARRUSEL6.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg7" style="background-image: url(assets/VINEDOS_CARRUSEL7.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End Hero Slider -->
+
+                      </div><!--slider Div End-->
+                    </div><!--Shifter Div Row End-->
+                  </div><!--Wrap Vinedos Div End-->
+
+                  <div class="wrap" id="Procesos" >
+                    <div class="row" id="Shifter-Row"  >
+                      <div class="col-11" id="Info">
+                        <br>
+                        <h5>PROCESOS</h5>
+                        <pre style="padding-top: 1%;">VINOS TRIBOS. 
+Desde un inicio, nuestra filosofía se basó en lograr tener vinos de la más alta calidad, competitivos internacionalmente. 
+Nuestra calidad la controlamos de la siguiente manera: 
+•   Viñedos propios: toda nuestra materia prima (uva), proviene exclusivamente de nuestro rancho. 
+
+•   Procesos: utilizamos lo último en tecnología que permiten la selección de la mejor fruta, para lograr vinos de excelencia.
+
+•   Nuestra gente: Contamos con gente capacitada que conoce el cultivo a la perfección. Además, José Trillo Rivas, es nuestro enólogo, reconocido a nivel internacional por lograr hacer vinos elegantes y de mucho renombre.
+
+•   Responsabilidad social: Procuramos hacer nuestros procesos lo mas eficiente posible. Ahorrando agua y otras sustancias escasas. Respetamos y cuidamos el medio ambiente.
+</pre>
+                        <video width="600" height="auto" controls>
+                            <source src="assets/TRIBOS_VIDEO.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <br><br>
+                      </div><!--Info Div End -->
+                    </div><!--Shifter Div Row End-->
+                  </div><!--Wrap Procesos Div End-->
+
+                  <div class="wrap" id="Bodega">
+                    <div class="row" id="Shifter-Row">
+                      <div class="col-5" id="Info">
+                          <pre style="padding-top: 1%;">La pasión por nuestro producto nos hace crear las condiciones ideales que permitan almacenar de la mejor manera posible la maduración ideal de nuestros vinos.
+
+•   Calidad: Contamos con los mejores equipos, el personal más capacitado y procesos meticulosos. La calidad esta por sobre todas las cosas.
+ 
+•   Autenticidad: Respetamos las cualidades de la zona y de las variedades, obtenemos como resultado vinos auténticos y con diferenciaciones claras. 
+
+•   Tecnología de vanguardia: Procesamos nuestros mostos con la más alta tecnología para así, obtener mejores cualidades gustativas.
+</pre>
+                      </div><!--Info Div End -->
+
+                      <div class="col-7" id="slider">
+                        <!-- Hero Slider -->
+                        <br>
+                        <div id="home" class="hero-slider owl-carousel owl-theme" style="height: 80%;">
+                            <div class="single-hs-item item-bg1" style="background-image: url(assets/BODEGA_CARRUSEL1.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg2" style="background-image: url(assets/BODEGA_CARRUSEL2.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg3" style="background-image: url(assets/BODEGA_CARRUSEL3.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg4" style="background-image: url(assets/BODEGA_CARRUSEL4.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg5" style="background-image: url(assets/BODEGA_CARRUSEL5.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg6" style="background-image: url(assets/BODEGA_CARRUSEL6.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg7" style="background-image: url(assets/BODEGA_CARRUSEL7.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-hs-item item-bg8" style="background-image: url(assets/BODEGA_CARRUSEL8.jpg)">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- End Hero Slider -->
+                     </div><!--slider Div End-->
+
+                    </div><!--Shifter Div Row End-->
+                  </div><!--Wrap Bodega Div End-->
+
+                  <div class="wrap" id="Enologo">
+                    <div class="row" id="Shifter-Row">
+                      <div class="col-9" id="Info">
+                        <h5>JOSÉ TRILLO RIVAS</h5>
+                        <pre style="padding-top: 1%;">José Trillo Rivas, lleva colaborando con nosotros mas de 5 años. Marcando en los vinos un estilo que sin duda ha dejado impresiones excepcionales por donde pasa. O por donde ha trabajado
+
+•   Ingeniero agrónomo y Enólogo por la Universidad Politécnica de Madrid. 
+•   Nacido en Ribera del Duero.
+•   Inicio su carrera en la icónica Bodega Vega Sicilia. 
+•   Continúo trabajando en Chile en la bodega Lapostolle Clos Apalta. 
+Actualmente es Enólogo director en bodegas mexicanas de renombre como: Bodegas del Viento, Bodega Los Cedros. 
+</pre>
+
+                      </div><!--Info Div End -->
+                    </div><!--Shifter Div Row End-->
+                  </div><!--Wrap Enologo Div End-->
+
+                </div><!--Content Shifter Div End-->
+            </div><!--Content Row End-->
+            <div class="clearfix"></div>
         </div><!--Main Container Div End-->
     </div><!--End container Fluid-->
 
@@ -145,6 +278,17 @@ cultivos</pre>
         </div><!--foot row end-->
     </footer>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "col-8") {
+        x.className += " responsive";
+      } else {
+        x.className = "col-8";
+      }
+    }
+    </script>
+    <script src="js/Side-MenuB.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/owl.carousel.min.js"></script>

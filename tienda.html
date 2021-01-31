@@ -8,33 +8,39 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/standard.css">
+
 </head>
 
 <body>
-    <div class="container-fluid" style="background-image: url('assets/FONDO_PREMIOS.png'); height: auto;">
+    <div class="container-fluid" id="container-fluid" style="background-image: url('assets/FONDO_PREMIOS.png');">
         <div class="container" id="Main-Container">
-            <div class="row" id="LogoMenu-Row">
+            <div class="row" id="LogoMenu-Row" >
                 <div class="col-2" id="Logo">
-                    <a href="index.html"><img src="assets/LOGO_TRIBOS_anim_black.gif" style="width: 70%; padding-left: 2%;"></img></a>
+                    <a href="index.html"><img id="menu_logo" src="assets/LOGO_TRIBOS_anim_black.gif"></img></a>
                 </div><!--Logo-Div End-->
-                <div class="col-7" id="Menu">
-                    <p><a href="nosotros.html">NOSOTROS</a> | 
-                    <a href="catalogo.html">CÁTALOGO</a> | 
-                    <a href="viñedos.html">PROCESO</a> | 
-                    <a href="tienda.html"><mark><b>TIENDA</b></mark></a> | 
-                    <a href="noticias.html">NOTICIAS</a> | 
-                    <a href="contacto.html">CONTACTO</a></p>
+                <div class="col-2" id="Middle">
+                </div><!--Logo-Div End-->
+                <div class="col-8" id="topnav-b">
+                    <a href="nosotros.html">NOSOTROS</a><a class="noun">|</a>
+                    <a href="catalogo.html">CÁTALOGO</a><a class="noun">|</a>
+                    <a href="viñedos.html">PROCESO</a><a class="noun">|</a>
+                    <a href="tienda.html" class="active">TIENDA</a><a class="noun">|</a>
+                    <a href="noticias.html">NOTICIAS</a><a class="noun">|</a>
+                    <a href="contacto.html">CONTACTO</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">...</i>
+                    </a>
                 </div><!--Menu-div end-->
-                <div class="col-2" id="Shop-Icon" >
-                    <img src="assets/car.png" style="width: 25%; height: auto; padding-top: 30%;">
+                <div class="col-1">
+                    <img id="Shop-Icon" src="assets/car.png">
                 </div><!--Shop-Icon-Div End-->
             </div><!--Menu Row Div End-->
-            <div class="row" id="Content-Row" style="height: 70%; max-height: auto; padding-top: 5%;">
-                <div class="col-3" id="Bottle" style="padding-left: 2%;">
-                    <img src="assets/BOTELLA_PNG_(NOSOTROS).png" style="width: 90%; height: auto; padding-left: 10%;">
+            <div class="row" id="Content-Row">
+                <div class="col-4" id="Bottle">
+                    <img id="Bottle-T" src="assets/BOTELLA_PNG_(NOSOTROS).png">
                 </div><!--Bottle Div End-->
-                <div class="col-7" id="Text">
-                    <b><h5 style="font-size: 180%; font-weight: bolder;">CABERNET SAUVIGNON SHIRAZ</h5></b>
+                <div class="col-7" id="Text-T">
+                    <h5 style="color: black;">CABERNET SAUVIGNON SHIRAZ</h5>
                     <pre>VINO: Tinto.
 UVAS: Cabernet Sauvignon, Syrah.
 COSECHA: 2017.
@@ -46,14 +52,16 @@ Naríz: franca, rica en matices, agradable frutalidad, notas de madera de cedro.
 Boca: estructurada pero frutal, paso por boca amplio y largo, tanino marcado
 pero agradable, acidez equilibrada, buen potencial de guarda.
 
-Maridaje: Cortes al asador, carne roja, puerco, tuétano, cabrito, platillos complejos y grasos.
+Maridaje: Cortes al asador, carne roja, puerco, tuétano, cabrito, platillos 
+complejos y grasos.
 
 Temperatura de consumo: 15 - 17 grados C.</pre>
                 </div><!--Text Div End-->
-                <div class="col-2" id="Side-Options">
+                <div class="col-1" id="Side-Options-T">
                     <label>Cant.<br>1</label>
                 </div><!--Side Options Div End-->
             </div><!--Content Row End-->
+
         </div><!--Main Container Div End-->
     </div><!--End container Fluid-->
 
@@ -86,9 +94,17 @@ Temperatura de consumo: 15 - 17 grados C.</pre>
         </div><!--foot row end-->
     </footer>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("topnav-b");
+      if (x.className === "col-8") {
+        x.className += " responsive";
+      } else {
+        x.className = "col-8";
+      }
+    }
+    </script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/sliderb.js"></script> 
 </body>
 </html>

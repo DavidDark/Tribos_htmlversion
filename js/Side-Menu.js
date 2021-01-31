@@ -1,5 +1,5 @@
 function shiftcontent(evt, section) {
-  var i, wrap, shift;
+  var i,j, wrap, shift;
   var sct = document.getElementById(section).id;
   wrap = document.getElementsByClassName("wrap");
   for (i = 0; i < wrap.length; i++) {
@@ -8,6 +8,11 @@ function shiftcontent(evt, section) {
   shift = document.getElementsByClassName("shift");
   for (i = 0; i < shift.length; i++) {
     shift[i].className = shift[i].className.replace(" active", "");
+    document.getElementById('menu_logo').src='assets/LOGO_TRIBOS_anim.gif';
+    document.getElementById("Side-Menu").style.color = "white";
+    try{
+      document.getElementById('topnav-b').id ='topnav';
+    }catch(error){}
   }
   document.getElementById('Nosotros').style.display = "none";
   document.getElementById(section).style.display = "block";
@@ -29,6 +34,10 @@ function shiftcontent(evt, section) {
   }
   if (sct === "Premios") {
     document.getElementById("container-fluid").style.backgroundImage = "url(assets/FONDO_PREMIOS.png)";
+    document.getElementById('menu_logo').src='assets/LOGO_TRIBOS_anim_black.gif';
+    document.getElementById("Side-Menu").style.color = "black";
+    document.getElementById('topnav').id ='topnav-b';
+
   }
   evt.currentTarget.className += " active";
 }

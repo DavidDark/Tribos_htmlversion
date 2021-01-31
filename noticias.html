@@ -13,22 +13,28 @@
 <body>
     <div class="container-fluid" style="background-image: url('assets/FONDO_PREMIOS.png'); height: auto;">
         <div class="container" id="Main-Container">
-            <div class="row" id="LogoMenu-Row">
+            <div class="row" id="LogoMenu-Row" >
                 <div class="col-2" id="Logo">
-                    <a href="index.html"><img src="assets/LOGO_TRIBOS_anim_black.gif" style="width: 70%; padding-left: 2%;"></img></a>
+                    <a href="index.html"><img id="menu_logo" src="assets/LOGO_TRIBOS_anim_black.gif"></img></a>
                 </div><!--Logo-Div End-->
-                <div class="col-7" id="Menu">
-                    <p><a href="nosotros.html">NOSOTROS</a> | 
-                    <a href="catalogo.html">CÁTALOGO</a> | 
-                    <a href="viñedos.html">PROCESO</a> | 
-                    <a href="tienda.html">TIENDA</a> | 
-                    <a href="noticias.html"><mark><b>NOTICIAS</b></mark></a> | 
-                    <a href="contacto.html">CONTACTO</a></p>
+                <div class="col-2" id="Middle">
+                </div><!--Logo-Div End-->
+                <div class="col-8" id="topnav-b">
+                    <a href="nosotros.html">NOSOTROS</a><a class="noun">|</a>
+                    <a href="catalogo.html">CÁTALOGO</a><a class="noun">|</a>
+                    <a href="viñedos.html">PROCESO</a><a class="noun">|</a>
+                    <a href="tienda.html">TIENDA</a><a class="noun">|</a>
+                    <a href="noticias.html" class="active">NOTICIAS</a><a class="noun">|</a>
+                    <a href="contacto.html">CONTACTO</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">...</i>
+                    </a>
                 </div><!--Menu-div end-->
             </div><!--Menu Row Div End-->
             <div class="row" id="Content-Row"  style="height: auto;">
-                <div class="col-12" id="Content" style="padding-left: 7%; padding-right: 7%;">
-                	<b><h5 style="font-size: 170%; font-weight: bolder; padding-left: 2%;">NOTICIAS</h5></b>
+                <div class="col-12" id="Content">
+                    <br>
+                	<h5 style="color:black;">NOTICIAS</h5>
                 	<!--Carousel Wrapper-->
 					<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 					  <!--Slides-->
@@ -43,7 +49,8 @@
 					            src="assets/FONDO_MISION.png" alt="Card image cap">
 					          <div class="card-body">
 					            <p class="card-text" style="text-align: center;">Saltillo, Coah.- La bodega de vinos Tribos tiene prácticamente listas 10 mil botellas de su primera cosecha 2017, las cuales llevará al mercado a inicios de 2020. Su objetivo es llegar a una producción anual de 120 mil botellas.</p>
-					            <a href="https://www.zocalo.com.mx/new_site/articulo/tribos-una-nueva-vinicola-del-estado">Ver más...</a>
+                                <br><br>
+					            <a href="https://www.zocalo.com.mx/new_site/articulo/tribos-una-nueva-vinicola-del-estado">Ver más</a>
 					          </div>
 					        </div>
 					      </div>
@@ -54,7 +61,7 @@
 					            src="assets/FONDO_NOSOTROS.png" alt="Card image cap">
 					          <div class="card-body">
 					            <p class="card-text" style="text-align: center;">Los vinos de las casas vitivinícolas de Coahuila siguen destacando a nivel nacional e internacional. En esta ocasión dentro del evento “Into the Wine”, en San Miguel de Allende, Guanajuato, en donde los coahuilenses Jorge Del Bosque, Rosendo Villarreal y Julián Dávila obtuvieron premios.</p>
-					            <a href="https://vanguardia.com.mx/articulo/destacan-nivel-internacional-y-nacional-los-vinos-de-coahuila">Ver más...</a>
+					            <a href="https://vanguardia.com.mx/articulo/destacan-nivel-internacional-y-nacional-los-vinos-de-coahuila">Ver más</a>
 					          </div>
 					        </div>
 					      </div>
@@ -65,7 +72,7 @@
 					            src="assets/FONDO_VISION.png" alt="Card image cap">
 					          <div class="card-body">
 					            <p class="card-text" style="text-align: center;">Los vinos de las casas vitivinícolas de Coahuila siguen destacando a nivel nacional e internacional. En esta ocasión dentro del evento “Into the Wine”, en San Miguel de Allende, Guanajuato, en donde los coahuilenses Jorge Del Bosque, Rosendo Villarreal y Julián Dávila obtuvieron premios.</p>
-					            <a href="https://vanguardia.com.mx/articulo/destacan-nivel-internacional-y-nacional-los-vinos-de-coahuila">Ver más...</a>
+					            <a href="https://vanguardia.com.mx/articulo/destacan-nivel-internacional-y-nacional-los-vinos-de-coahuila">Ver más</a>
 					          </div>
 					        </div>
 					      </div>
@@ -109,9 +116,17 @@
         </div><!--foot row end-->
     </footer>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("topnav-b");
+      if (x.className === "col-8") {
+        x.className += " responsive";
+      } else {
+        x.className = "col-8";
+      }
+    }
+    </script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/sliderb.js"></script> 
 </body>
 </html>

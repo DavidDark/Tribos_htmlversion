@@ -5,6 +5,6 @@ $('.hero-slider').owlCarousel({
     nav:true,
     margin:10,
     items:1,
-    dots: true,
+    dots: false,
     autoplay:500,
 })
