@@ -24,16 +24,10 @@ Standard style
 .container-fluid{
     background-size: 100% 100%;
     background-color: #cccccc;
-    padding-top: 5%;
-    height: 90%;
+    padding-top: 4%;
+    height: 88%;
 }
 
-footer {
-    height: 10%;
-    width: 100%;
-    text-align: center; 
-    position: relative;
-}
 
 h5{
     color: white;
@@ -70,6 +64,34 @@ h5{
     padding-top: 2%;
     padding-left: 5%;
 }
+/*
+ *  Scroll bar style
+ */
+
+#Info pre::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#Info pre::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: transparent;
+}
+
+#Info pre::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+                     left bottom,
+                     left top,
+                     color-stop(0.44, rgb(255, 144, 51)),
+                     color-stop(0.72, rgb(255, 144, 51)),
+                     color-stop(0.86, rgb(255, 144, 51)));
+}
+
 #C-Info{
   top: 15%;
   left: 20%;
@@ -282,7 +304,6 @@ ul {
 }
 li a.shift, li a.noun {
   display: inline-block;
-  
   padding: 8px;
   text-decoration: none;
 }
@@ -291,7 +312,7 @@ li a.active {
   color: white;
 }
 
-li a:hover:not(.active,.noun) {
+li a:hover:not(.active,.noun,.f-link) {
   background-color: #FF9033;
   color: white;
 }
@@ -311,7 +332,7 @@ li a:hover:not(.active,.noun) {
 Side-Menu Func style
 ==========================*/
 
-.wrap:not(#Nosotros,#Vinedos){
+.wrap:not(#Nosotros,#Vinedos,#Foot-Wrap,#Contacto-Wrap){
   display: none;
 }
 /* Clear floats after the tab */
@@ -320,7 +341,90 @@ Side-Menu Func style
   clear: both;
   display: table;
 }
+/*
+Footer style
+==========================*/
+footer {
+    height: auto;
+    width: 100%;
+    text-align: center; 
+    position: relative;
+}
+h6{
+    text-align: right;
+    color: red;
+    font-size: 80%;
+    font-family: FordAntennaCond-Medium;
+}
+#Privacidad-Div,#Contacto:not(#stripe1,#stripe2){
+  left: 0;
+  top: 25;
+}
+#Links-Div{
+  position: absolute;
+  left: 37%;
+}
+#Foot-Content{
+  left: 15%;
+}
+#Foot-Down-Content{
+  left: 10%;
+  position: absolute;
+  top: 80;
+}
+#Foot-Content{
+  padding-top: 0.5%;
+}
 
+.contacto-text{
+  color:black;
+  text-align: left;
+  font-size: 8px;
+  font-family: FordAntennaCond-Medium;
+}
+.links{
+  font-size: 10px;
+  color:black;
+}
+.foot-list {
+  list-style-type: none;
+}
+.fl-item, .fl-item1 {
+  padding-top: 2%;
+  text-decoration: none;
+}
+.fl-item1{
+  width: 50%;
+  position: absolute;
+  top: 25;
+  left: 73;
+}
+.foot-text{
+  font-size: 7px;
+}
+#stripe1{
+  position: absolute;
+  top: 0;
+}
+#stripe2{
+  position: absolute;
+  top: 0;
+  right: 30;
+}
+.links-ico{
+  width: 20px;
+}
+.f-link{
+  padding-left: 16px;
+  position: absolute;
+}
+#strips{
+  position: absolute;
+  right: 0;
+  top: 10;
+  width: 150px;
+  max-width: 100%;
+}
 /*
 Slider style
 ==========================*/

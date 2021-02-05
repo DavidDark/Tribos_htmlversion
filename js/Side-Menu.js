@@ -2,7 +2,7 @@ function shiftcontent(evt, section) {
   var i,j, wrap, shift;
   var sct = document.getElementById(section).id;
   wrap = document.getElementsByClassName("wrap");
-  for (i = 0; i < wrap.length; i++) {
+  for (i = 0; i < wrap.length-2; i++) {
     wrap[i].style.display = "none";
   }
   shift = document.getElementsByClassName("shift");
