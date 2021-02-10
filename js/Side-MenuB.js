@@ -14,10 +14,12 @@ function shiftcontent(evt, section) {
   for (i = 0; i < shift.length; i++) {
     shift[i].className = shift[i].className.replace(" active", "");
     document.getElementById("container-fluid").style.height = "90%";
+    document.getElementById("footer").style.position = "fixed";
   }
   document.getElementById(section).style.display = "block";
   if (sct === "Procesos") {
     document.getElementById("container-fluid").style.height = "auto";
+    document.getElementById("footer").style.position = "relative";
   }
   evt.currentTarget.className += " active";
 

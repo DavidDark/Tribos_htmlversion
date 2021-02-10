@@ -20,12 +20,14 @@ Font imports
 /*
 Standard style
 ==========================*/
-
+body {line-height: 1.4;
+  background-size: 110% 100%;
+  background-repeat:no-repeat;
+  background-color: #cccccc;
+}
 .container-fluid{
-    background-size: 100% 100%;
-    background-color: #cccccc;
     padding-top: 4%;
-    height: 88%;
+    height: 85%;
 }
 
 
@@ -347,10 +349,11 @@ Side-Menu Func style
 Footer style
 ==========================*/
 footer {
-    height: auto;
+    height: 15%;
     width: 100%;
     text-align: center; 
-    position: relative;
+    position: fixed;
+    background-color: white;
 }
 h6{
     text-align: right;
@@ -422,10 +425,15 @@ h6{
 }
 #strips{
   position: absolute;
-  right: 0;
+  right: 5;
   top: 10;
   width: 150px;
   max-width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  footer{
+    position: relative;
+  }
 }
 /*
 Form style
