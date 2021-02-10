@@ -35,10 +35,12 @@ h5{
     font-family: FordAntennaCond-Medium;
     font-weight: bolder;
 }
+
 .form-row label{
   color:white;
-  font-size: 100%;
+  font-size: 90%;
   font-family: FordAntennaCond-Medium;
+  display: inline;
 }
 #Logo{
     position: absolute;
@@ -426,11 +428,11 @@ h6{
   max-width: 100%;
 }
 /*
-Slider style
+Form style
 ==========================*/
 .form-control{
   color:white;
-  background-color: black;
+  background-color: transparent;
 }
 #Send{
   background-color: #FF9033;
