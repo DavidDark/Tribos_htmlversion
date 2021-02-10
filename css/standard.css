@@ -199,7 +199,7 @@ Topbar style
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #topnav a {display: none;}
   #topnav a.icon {
     float: right;
@@ -207,7 +207,7 @@ Topbar style
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #topnav.responsive {position: relative;padding-top: 0px;}
   #topnav.responsive .icon {
     position: absolute;
@@ -260,7 +260,7 @@ Topbar style B
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #topnav-b a {display: none;}
   #topnav-b a.icon {
     float: right;
@@ -268,7 +268,7 @@ Topbar style B
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #topnav-b.responsive {position: relative;padding-top: 0px;}
   #topnav-b.responsive .icon {
     position: absolute;
@@ -321,7 +321,7 @@ li a:hover:not(.active,.noun,.f-link) {
   #Side-Menu{
     padding-top: 5%;
     text-align: right;
-    font-size: 60%;
+    font-size: 50%;
     padding-right: 20%;
 }
   #Side-menu a.noun {
@@ -397,7 +397,7 @@ h6{
   width: 50%;
   position: absolute;
   top: 25;
-  left: 73;
+  left: 23%;
 }
 .foot-text{
   font-size: 7px;
@@ -424,6 +424,17 @@ h6{
   top: 10;
   width: 150px;
   max-width: 100%;
+}
+/*
+Slider style
+==========================*/
+.form-control{
+  color:white;
+  background-color: black;
+}
+#Send{
+  background-color: #FF9033;
+  border-color: black;
 }
 /*
 Slider style
