@@ -5,23 +5,14 @@
   font-family: "Nunito", sans-serif;
 }
 
-button {
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 15px 0;
-  color: #fff;
-  font-size: 16px;
-  letter-spacing: 1px;
-  background: #603bbb;
-  cursor: pointer;
-}
-
 .login {
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
-  background: #e9e9e9;
+  background-size: 110% 100%;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-image: url("../assets/FONDO_NOSOTROS.png");
   display: flex;
 }
 
@@ -36,9 +27,9 @@ button {
   justify-content: center;
   background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
+    rgb(44, 44, 44) 0%,
+    rgba(41, 41, 41, 0.9) 59%,
+    rgba(46, 46, 46, 0.9) 100%
   );
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
 }
@@ -58,7 +49,7 @@ button {
   font-size: 19px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: rgb(255, 255, 255);
   letter-spacing: 1px;
 }
 
@@ -93,13 +84,11 @@ button {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
-  background: radial-gradient(
-    ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
-  );
+  min-height: 92vh;
+  background-size: 110% 100%;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-image: url("../assets/FONDO_NOSOTROS.png");
 }
 
 .hero nav {

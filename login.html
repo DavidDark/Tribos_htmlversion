@@ -1,57 +1,49 @@
 <html lang="es">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+
     <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
 
-    <link rel="stylesheet" href="css/login.css">
-
-</head>
-
-<body id="body" style="background-image: url('assets/FONDO_NOSOTROS.png');">
-  <div className="App">
-    <section className="login">
-        <div className="loginContainer">
-          <label>Username</label>
-          <input
-            type="text"
-            autoFocus
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <p className="errorMsg">{emailError}</p>
-          <label>Password</label>
-          <input
-            type="password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <p className="errorMsg">{passwordError}</p>
-          <div className="btnContainer">
-            {hasAccount ? (
-              <>
-                <button onClick={handleLogin}>Sign in</button>
-                <p>
-                  Don't have an account ?
-                  <span onClick={() => setHasAccount(!hasAccount)}>Sign up</span>
-                </p>
-              </>
-            ) : (
-              <>
-                <button onClick={handleSignup}>Sign up</button>
-                <p>
-                  Have an account ?
-                  <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
-                </p>
-              </>
-            )}
+  <body id="body" style="background-image: url('assets/FONDO_NOSOTROS.png')">
+    <div class="App">
+      <section class="login">
+        <form id="login-form" class="loginContainer">
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              id="login-email"
+              class="form-control"
+              placeholder="email"
+              autofocus
+              required
+            />
           </div>
-        </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input
+              type="password"
+              id="login-password"
+              class="form-control"
+              placeholder="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
       </section>
     </div>
-
-</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script src="js/fire.js"></script>
+    <script src="js/login.js"></script>
+  </body>
 </html>
