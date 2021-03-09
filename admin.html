@@ -47,26 +47,32 @@
                 Acciones
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Sección de Noticias</a>
-                <a class="dropdown-item" href="#">Catálogo</a>
                 <a
                   class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#signupModal"
-                  href="#"
+                  onclick="shiftcontent(event, 'Noticias')"
+                  >Sección de Noticias</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="shiftcontent(event, 'Catalogo')"
+                  >Catálogo</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="shiftcontent(event, 'Usuarios')"
                   >Control de usuarios</a
                 >
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="logout" href="#">Cerrar Sesión</a>
+              <a class="nav-link" id="logout">Cerrar Sesión</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="homeSection">
       <br />
       <div class="loginContainer">
         <h3>
@@ -79,6 +85,209 @@
           para la página.
         </p>
       </div>
+    </section>
+
+    <section class="hero" id="Noticias">
+      <br />
+      <div class="newsContainer">
+        <div class="col-md-4" style="float: left">
+          <div class="card mb-3">
+            <img
+              class="card-img-top"
+              src="assets/FONDO_MISION.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center">
+                Saltillo, Coah.- La bodega de vinos Tribos tiene prácticamente
+                listas 10 mil botellas de su primera cosecha 2017, las cuales
+                llevará al mercado a inicios de 2020. Su objetivo es llegar a
+                una producción anual de 120 mil botellas.
+              </p>
+              <br /><br />
+              <a
+                href="https://www.zocalo.com.mx/new_site/articulo/tribos-una-nueva-vinicola-del-estado"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--card end-->
+        <div class="col-md-4" style="float: left">
+          <div class="card mb-3">
+            <img
+              class="card-img-top"
+              src="assets/plus.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <div
+                class="form-group"
+                style="position: absolute; bottom: 15%; padding-right: 3%"
+              >
+                <textarea
+                  name="textarea"
+                  rows="3"
+                  cols="50"
+                  type="text"
+                  class="form-control"
+                  id="validationDefault04"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card End-->
+      </div>
+    </section>
+
+    <section class="hero" id="Catalogo">
+      <br />
+      <div class="usersContainer" style="background-color: white">
+        <table>
+          <th>CAVERNET SAUVIGNON SHIRAZ</th>
+          <tr>
+            <th>Url</th>
+            <th>Vino</th>
+            <th>Uvas</th>
+            <th>Cosecha</th>
+            <th>Region</th>
+            <th>Barrica</th>
+            <th>Vista</th>
+            <th>Nariz</th>
+            <th>Boca</th>
+            <th>Maridaje</th>
+            <th>Temperatura</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="hero" id="Usuarios">
+      <br />
+      <div class="usersContainer" style="background-color: white">
+        <table>
+          <tr>
+            <th>Email</th>
+            <th>Creado</th>
+            <th>Fecha de acceso</th>
+            <th>Id de Usuario</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <button
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#signupModal"
+      >
+        Añadir Usuario
+      </button>
+      <button class="btn btn-primary" onclick="gotoFB()">
+        Ver en Firebase
+      </button>
     </section>
 
     <!-- Modal -->

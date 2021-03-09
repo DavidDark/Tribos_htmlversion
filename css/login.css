@@ -85,10 +85,13 @@
 .hero {
   width: 100%;
   min-height: 92vh;
-  background-size: 110% 100%;
+  background-size: 110% 110%;
   background-repeat: no-repeat;
   background-color: #cccccc;
   background-image: url("../assets/FONDO_NOSOTROS.png");
+}
+.hero:not(#homeSection) {
+  display: none;
 }
 
 .hero nav {
@@ -133,4 +136,37 @@
 }
 .hero .loginContainer p {
   text-align: justify;
+}
+.card-body {
+  max-height: 250;
+  min-height: 250;
+}
+.card-body a {
+  right: 10;
+  bottom: 5;
+  position: absolute;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  max-height: 164.3px;
+  min-height: 164.3px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }

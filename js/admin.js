@@ -1,3 +1,23 @@
+//Go to Firebase
+function gotoFB() {
+  location.replace(
+    "https://console.firebase.google.com/project/tribos-fb/authentication/users"
+  );
+}
+//Shift Content
+function shiftcontent(evt, section) {
+  var i, j, wrap, dropItem;
+  var sct = document.getElementById(section).id;
+  wrap = document.getElementsByClassName("hero");
+  for (i = 0; i < wrap.length; i++) {
+    wrap[i].style.display = "none";
+  }
+
+  document.getElementById("homeSection").style.display = "none";
+  document.getElementById(section).style.display = "block";
+  document.getElementById("body").style.backgroundImage =
+    "url(assets/FONDO_PREMIOS.png)";
+}
 //Registrar Usuario
 const signupForm = document.querySelector("#signup-form");
 
