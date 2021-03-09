@@ -430,11 +430,7 @@ h6{
   width: 150px;
   max-width: 100%;
 }
-@media screen and (max-width: 1000px) {
-  footer{
-    position: relative;
-  }
-}
+
 /*
 Form style
 ==========================*/
