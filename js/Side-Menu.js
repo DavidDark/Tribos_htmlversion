@@ -18,22 +18,22 @@ function shiftcontent(evt, section) {
   document.getElementById(section).style.display = "block";
 
   if (sct === "Historia") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_HISTORIA.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_HISTORIA.jpg)";
   }
   if (sct === "Mision") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_MISION.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_MISION.jpg)";
   }
   if (sct === "Vision") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_VISION.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_VISION.jpg)";
   }
   if (sct === "Escencia") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_ESENCIA.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_ESENCIA.jpg)";
   }
   if (sct === "Cronograma") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_CRONOGRAMA.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_CRONOGRAMA.jpg)";
   }
   if (sct === "Premios") {
-    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_PREMIOS.png)";
+    document.getElementById("body").style.backgroundImage = "url(assets/FONDO_PREMIOS.jpg)";
     document.getElementById('menu_logo').src='assets/LOGO_TRIBOS_anim_black.gif';
     document.getElementById("Side-Menu").style.color = "black";
     document.getElementById('topnav').id ='topnav-b';

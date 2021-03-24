@@ -12,7 +12,7 @@
   background-size: 110% 100%;
   background-repeat: no-repeat;
   background-color: #cccccc;
-  background-image: url("../assets/FONDO_NOSOTROS.png");
+  background-image: url("../assets/FONDO_NOSOTROS.jpg");
   display: flex;
 }
 
@@ -88,7 +88,7 @@
   background-size: 110% 110%;
   background-repeat: no-repeat;
   background-color: #cccccc;
-  background-image: url("../assets/FONDO_NOSOTROS.png");
+  background-image: url("../assets/FONDO_NOSOTROS.jpg");
 }
 .hero:not(#homeSection) {
   display: none;

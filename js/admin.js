@@ -16,7 +16,7 @@ function shiftcontent(evt, section) {
   document.getElementById("homeSection").style.display = "none";
   document.getElementById(section).style.display = "block";
   document.getElementById("body").style.backgroundImage =
-    "url(assets/FONDO_PREMIOS.png)";
+    "url(assets/FONDO_PREMIOS.jpg)";
 }
 //Registrar Usuario
 const signupForm = document.querySelector("#signup-form");
