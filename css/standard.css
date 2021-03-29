@@ -34,7 +34,7 @@ body {line-height: 1.4;
 h5{
     color: white;
     font-size: 180%;
-    font-family: FordAntennaCond-Medium;
+    font-family: FordAntennaCond-ExtraLight;
     font-weight: bolder;
 }
 
@@ -65,8 +65,8 @@ h5{
 }
 
 #Info{
-    padding-top: 2%;
-    padding-left: 5%;
+  margin-left: 1.8em;
+  top:0;
 }
 /*
  *  Scroll bar style
@@ -158,7 +158,7 @@ h5{
 }
 #Content-Row{
     height: 100%;
-    padding-left: 4%;
+    padding-right: 6%;
     padding-top: 2%;
 }
 
@@ -187,6 +187,7 @@ Topbar style
     color:white;
     padding-top: 3.2%;
     overflow: hidden;
+    margin-bottom: 1.5em;
 }
 
 #topnav a:hover:not(.active,.noun) {
@@ -349,7 +350,9 @@ Side-Menu Func style
 Footer style
 ==========================*/
 footer {
-    height: 15%;
+    position: absolute;
+    bottom: 0;
+    height:auto;
     width: 100%;
     text-align: center; 
     position: fixed;
@@ -364,6 +367,7 @@ h6{
 #Privacidad-Div,#Contacto:not(#stripe1,#stripe2){
   left: 0;
   top: 25;
+  bottom: 0
 }
 #Links-Div{
   position: absolute;

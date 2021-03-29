@@ -1,5 +1,5 @@
 $('.hero-slider').owlCarousel({
-    animateOut: 'animate__fadeOutLeft',
+    animateOut: 'fadeOut',
     animateIn: 'heartBeat',
     loop:true,
     nav:true,
